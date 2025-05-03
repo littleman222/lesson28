@@ -50,7 +50,37 @@
         <a href="aboutus.html">About Us</a>
         <a href="Gallery.html">Gallery</a>
         <a href="Contact.html">Contact Us</a>
-        
+     
     </div>
+<!-- Slide Show -->
+ <div>
+ <img class="mySlides" src="hehe.jpg" style="height:500px;width:400px;">
+<img class="mySlides" src="ligma.jpg" style="height:500px;width:400px;">
+<img class="mySlides" src="shidou.jpg" style="height:500px;width:400px;">
+ </div>
+    
+ <script>
+    var myIndex = 0;
+    carousel();
+
+    // Automatic Slideshow - change image every 3 seconds pls
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+
+        for (i = 0; i < x.length; i++) {
+            // #executed for only 0 1 2
+            x[i].style.display= "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        //myidex=0,1,2,3 for index 3 come back again to 1
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+        //calling function every 3 seconds
+
+    } 
+ </script>
 </body>
 </html>
