@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: pink;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: gray;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: maroon;
+
+        }
+
+        .topnav a {
+            float: left;
+            color: maroon;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: lightgoldenrodyellow;
+            color: blue;
+        }
+
+        .topnav a:active {
+            background-color: #ffe066;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact Us</a>
+        <a href="Explore.html">explore</a>
+
+    </div>
+    <!-- Slide Show -->
+    <div>
+        <img class="mySlides" src="hehe.jpg" style="height:500px;width:400px;">
+        <img class="mySlides" src="ligma.jpg" style="height:500px;width:400px;">
+        <img class="mySlides" src="shidou.jpg" style="height:500px;width:400px;">
+        <img class="mySlides" src="Sae.jpg" style="height:500px;width:400px;">
+        <img class="mySlides" src="isagi.jpg" style="Height:500px;width:400px;">
+    </div>
+    
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        // Automatic Slideshow - change image every 3 seconds pls
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < x.length; i++) {
+                // #executed for only 0 1 2
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            //myidex=0,1,2,3 for index 3 come back again to 1
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+            //calling function every 3 seconds
+
+        } 
+    </script>
+    <body style="backgrounds-color: aquamarine;">
+        <h1> pizza </h1>
+        <p>
+            <img src="pizza.jpg" style="width:350px;height:270px;float: right;margin-left:15px;">
+    
+            Pizza (Italian : ['pittsa], Neapolitan: At the heart of Neapolitan cuisine lies a focus on fresh, seasonal
+            ingredients, simple preparations, and a celebration
+            of the sea's bounty. Tomatoes, garlic, olive oil, and seafood are staples, forming the backbone of many beloved
+            dishes.
+            Pizza, pasta, and seafood dominate the menu, but there's much more to explore.
+        </p>
+        <br><br><br><br><br><br><br><br><br><br>
+        <h1>Pastries</h1>
+        <p>
+            <img src="neometalsonic.jpg" style="width:350px; height:280px;float:right;margin-left:20px;">
+            Neapolitan cuisine has ancient historical roots that date back to the Greco-Roman period, which was enriched
+            over the
+            centuries by the influence of the different cultures that controlled Naples and its kingdoms, such as that of
+            Aragon and
+            France.
+        </p>
+    </body>
+    </body>
+    
+    </html>
